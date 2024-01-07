@@ -1,0 +1,20 @@
+digraph G {
+  node [style=filled,color=".3 .2 1.0",shape=box,];
+  "0" [label="Entry<AnonInner: void show()>",];
+  "1" [label="0: temp$0 = <java.lang.System: java.io.PrintStream out>",];
+  "2" [label="1: %intconst0 = 2",];
+  "3" [label="2: <AnonInner: void show()>[2@L17] temp$1 = invokestatic AnonInner.makeAdder(%intconst0)",];
+  "4" [label="3: %intconst1 = 5",];
+  "5" [label="4: <AnonInner: void show()>[4@L17] temp$2 = invokeinterface temp$1.add(%intconst1)",];
+  "6" [label="5: <AnonInner: void show()>[5@L17] invokevirtual temp$0.println(temp$2)",];
+  "7" [label="6: return",];
+  "8" [label="Exit<AnonInner: void show()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="FALL_THROUGH",];
+  "4" -> "5" [label="FALL_THROUGH",];
+  "5" -> "6" [label="FALL_THROUGH",];
+  "6" -> "7" [label="FALL_THROUGH",];
+  "7" -> "8" [label="RETURN",];
+}

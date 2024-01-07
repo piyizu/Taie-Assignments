@@ -1,0 +1,33 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="Entry<BranchConstant: void constant1(boolean)>",];
+  "1" [label="0: x = 2",];
+  "2" [label="1: y = 2",];
+  "3" [label="2: %intconst0 = 0",];
+  "4" [label="3: if (b == %intconst0) goto 8",];
+  "5" [label="4: goto 5",];
+  "6" [label="5: nop",];
+  "7" [label="6: z = x + y",];
+  "8" [label="7: goto 10",];
+  "9" [label="8: nop",];
+  "10" [label="9: z = x * y",];
+  "11" [label="10: nop",];
+  "12" [label="11: n = z",];
+  "13" [label="12: return",];
+  "14" [label="Exit<BranchConstant: void constant1(boolean)>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="FALL_THROUGH",];
+  "4" -> "9" [label="IF_TRUE",];
+  "4" -> "5" [label="IF_FALSE",];
+  "5" -> "6" [label="GOTO",];
+  "6" -> "7" [label="FALL_THROUGH",];
+  "7" -> "8" [label="FALL_THROUGH",];
+  "8" -> "11" [label="GOTO",];
+  "9" -> "10" [label="FALL_THROUGH",];
+  "10" -> "11" [label="FALL_THROUGH",];
+  "11" -> "12" [label="FALL_THROUGH",];
+  "12" -> "13" [label="FALL_THROUGH",];
+  "13" -> "14" [label="RETURN",];
+}

@@ -1,0 +1,18 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="Entry<Interprocedural: void invoke()>",];
+  "1" [label="0: <Interprocedural: void invoke()>[0@L10] temp$0 = invokevirtual %this.ten()",];
+  "2" [label="1: x = temp$0",];
+  "3" [label="2: %intconst0 = 10",];
+  "4" [label="3: <Interprocedural: void invoke()>[3@L11] temp$1 = invokevirtual %this.id(%intconst0)",];
+  "5" [label="4: y = temp$1",];
+  "6" [label="5: return",];
+  "7" [label="Exit<Interprocedural: void invoke()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="FALL_THROUGH",];
+  "4" -> "5" [label="FALL_THROUGH",];
+  "5" -> "6" [label="FALL_THROUGH",];
+  "6" -> "7" [label="RETURN",];
+}

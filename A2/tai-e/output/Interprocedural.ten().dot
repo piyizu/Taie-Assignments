@@ -1,0 +1,10 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="Entry<Interprocedural: int ten()>",];
+  "1" [label="0: temp$0 = 10",];
+  "2" [label="1: return temp$0",];
+  "3" [label="Exit<Interprocedural: int ten()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="RETURN",];
+}

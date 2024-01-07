@@ -1,0 +1,6 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="<test: int fuck(int,int)>",];
+  "1" [label="<test: void main(java.lang.String[])>",];
+  "1" -> "0" [label="[2@L4] temp$0 = invokestatic <test: int fuck(int,int)>(x, y);",];
+}

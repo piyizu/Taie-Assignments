@@ -1,0 +1,12 @@
+digraph G {
+  node [style=filled,color=".3 .2 1.0",shape=box,];
+  "0" [label="Entry<AnonInner: Adder makeAdder(int)>",];
+  "1" [label="0: temp$0 = new AnonInner$1Anonymous0",];
+  "2" [label="1: <AnonInner: Adder makeAdder(int)>[1@L8] invokespecial temp$0.<init>(i)",];
+  "3" [label="2: return temp$0",];
+  "4" [label="Exit<AnonInner: Adder makeAdder(int)>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="RETURN",];
+}

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-12-13T13:52:11" hostname="TPT14G3I524GPY" time="20.885">
+  <properties/>
+  <testcase name="testStaticFieldMultiStores" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="8.326"/>
+  <testcase name="testObjSens" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="2.153"/>
+  <testcase name="testArrayLoops" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="1.994"/>
+  <testcase name="testInterprocedural2" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="1.481"/>
+  <testcase name="testArray" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="1.382"/>
+  <testcase name="testMultiStores" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="1.372"/>
+  <testcase name="testArrayInter2" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="1.393"/>
+  <testcase name="testStaticField" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="1.41"/>
+  <testcase name="testInstanceField" classname="pascal.taie.analysis.dataflow.analysis.constprop.InterCPAliasTest" time="1.373"/>
+  <system-out><![CDATA[Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9776 classes with 97287 methods in the world
+WorldBuilder finishes, elapsed time: 6.66s
+throw starts ...
+1 classes in scope (app) of class analyses
+5 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.14s
+cfg starts ...
+cfg finishes, elapsed time: 0.04s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                9 (insens) / 9 (sens)
+#var points-to:               0 (insens) / 0 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    0 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           4 (insens) / 4 (sens)
+#call graph edges:            4 (insens) / 4 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.23s
+cg starts ...
+cg finishes, elapsed time: 0.01s
+icfg starts ...
+icfg finishes, elapsed time: 0.04s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.22s
+process-result starts ...
+process-result finishes, elapsed time: 0.06s
+Tai-e finishes, elapsed time: 7.68s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9778 classes with 97288 methods in the world
+WorldBuilder finishes, elapsed time: 1.96s
+throw starts ...
+3 classes in scope (app) of class analyses
+6 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                22 (insens) / 31 (sens)
+#var points-to:               28 (insens) / 28 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    2 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           6 (insens) / 13 (sens)
+#call graph edges:            10 (insens) / 12 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.13s
+cg starts ...
+cg finishes, elapsed time: 0.00s
+icfg starts ...
+CFG of <java.lang.Object: void <init>()> is absent, try to fix this by adding option -scope=reachable
+CFG of <java.lang.Object: void <init>()> is missing
+CFG of <java.lang.Object: void <init>()> is missing
+icfg finishes, elapsed time: 0.00s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 2.15s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9776 classes with 97287 methods in the world
+WorldBuilder finishes, elapsed time: 1.94s
+throw starts ...
+1 classes in scope (app) of class analyses
+5 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                11 (insens) / 11 (sens)
+#var points-to:               3 (insens) / 3 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    0 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           4 (insens) / 4 (sens)
+#call graph edges:            3 (insens) / 3 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.00s
+cg starts ...
+cg finishes, elapsed time: 0.00s
+icfg starts ...
+icfg finishes, elapsed time: 0.00s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.01s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 1.99s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9778 classes with 97290 methods in the world
+WorldBuilder finishes, elapsed time: 1.45s
+throw starts ...
+3 classes in scope (app) of class analyses
+8 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                21 (insens) / 22 (sens)
+#var points-to:               12 (insens) / 12 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    0 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           8 (insens) / 9 (sens)
+#call graph edges:            8 (insens) / 8 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.01s
+cg starts ...
+cg finishes, elapsed time: 0.00s
+icfg starts ...
+CFG of <java.lang.Object: void <init>()> is missing
+CFG of <java.lang.Object: void <init>()> is missing
+CFG of <java.lang.Object: void <init>()> is absent, try to fix this by adding option -scope=reachable
+icfg finishes, elapsed time: 0.00s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 1.48s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9776 classes with 97284 methods in the world
+WorldBuilder finishes, elapsed time: 1.36s
+throw starts ...
+1 classes in scope (app) of class analyses
+2 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                15 (insens) / 15 (sens)
+#var points-to:               3 (insens) / 3 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    0 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           1 (insens) / 1 (sens)
+#call graph edges:            0 (insens) / 0 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.00s
+cg starts ...
+cg finishes, elapsed time: 0.00s
+icfg starts ...
+icfg finishes, elapsed time: 0.00s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 1.38s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9777 classes with 97285 methods in the world
+WorldBuilder finishes, elapsed time: 1.33s
+throw starts ...
+2 classes in scope (app) of class analyses
+3 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                7 (insens) / 7 (sens)
+#var points-to:               4 (insens) / 4 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    0 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           3 (insens) / 3 (sens)
+#call graph edges:            2 (insens) / 2 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.01s
+cg starts ...
+cg finishes, elapsed time: 0.00s
+icfg starts ...
+CFG of <java.lang.Object: void <init>()> is absent, try to fix this by adding option -scope=reachable
+CFG of <java.lang.Object: void <init>()> is missing
+icfg finishes, elapsed time: 0.00s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 1.37s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9776 classes with 97286 methods in the world
+WorldBuilder finishes, elapsed time: 1.37s
+throw starts ...
+1 classes in scope (app) of class analyses
+4 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                11 (insens) / 11 (sens)
+#var points-to:               3 (insens) / 3 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    0 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           3 (insens) / 3 (sens)
+#call graph edges:            2 (insens) / 2 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.00s
+cg starts ...
+cg finishes, elapsed time: 0.00s
+icfg starts ...
+icfg finishes, elapsed time: 0.00s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 1.39s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9776 classes with 97284 methods in the world
+WorldBuilder finishes, elapsed time: 1.39s
+throw starts ...
+1 classes in scope (app) of class analyses
+2 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                2 (insens) / 2 (sens)
+#var points-to:               0 (insens) / 0 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    0 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           1 (insens) / 1 (sens)
+#call graph edges:            0 (insens) / 0 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.00s
+cg starts ...
+cg finishes, elapsed time: 0.00s
+icfg starts ...
+icfg finishes, elapsed time: 0.00s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 1.41s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9777 classes with 97285 methods in the world
+WorldBuilder finishes, elapsed time: 1.34s
+throw starts ...
+2 classes in scope (app) of class analyses
+3 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+cspta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                10 (insens) / 12 (sens)
+#var points-to:               8 (insens) / 8 (sens)
+#static field points-to:      0 (sens)
+#instance field points-to:    0 (sens)
+#array points-to:             0 (sens)
+#reachable methods:           3 (insens) / 5 (sens)
+#call graph edges:            3 (insens) / 4 (sens)
+----------------------------------------
+cspta finishes, elapsed time: 0.01s
+cg starts ...
+cg finishes, elapsed time: 0.00s
+icfg starts ...
+CFG of <java.lang.Object: void <init>()> is missing
+CFG of <java.lang.Object: void <init>()> is absent, try to fix this by adding option -scope=reachable
+icfg finishes, elapsed time: 0.00s
+inter-constprop starts ...
+inter-constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 1.37s
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

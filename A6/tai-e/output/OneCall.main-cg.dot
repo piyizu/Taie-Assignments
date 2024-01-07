@@ -1,0 +1,21 @@
+digraph G {
+  node [shape=box,color=".3 .2 1.0",style=filled,];
+  "0" [label="<One: int get()>",];
+  "1" [label="<Two: void <init>()>",];
+  "2" [label="<OneCall: void main(java.lang.String[])>",];
+  "3" [label="<C: void m()>",];
+  "4" [label="<One: void <init>()>",];
+  "5" [label="<C: Number id(Number)>",];
+  "6" [label="<java.lang.Object: void <init>()>",];
+  "7" [label="<C: void <init>()>",];
+  "1" -> "6" [label="[0@L40] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "2" -> "7" [label="[1@L3] invokespecial temp$0.<C: void <init>()>();",];
+  "2" -> "3" [label="[3@L4] invokevirtual c.<C: void m()>();",];
+  "3" -> "5" [label="[8@L15] temp$3 = invokevirtual %this.<C: Number id(Number)>(n2);",];
+  "3" -> "4" [label="[1@L12] invokespecial temp$0.<One: void <init>()>();",];
+  "3" -> "1" [label="[4@L13] invokespecial temp$1.<Two: void <init>()>();",];
+  "3" -> "0" [label="[10@L16] temp$4 = invokeinterface x.<Number: int get()>();",];
+  "3" -> "5" [label="[6@L14] temp$2 = invokevirtual %this.<C: Number id(Number)>(n1);",];
+  "4" -> "6" [label="[0@L34] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "7" -> "6" [label="[0@L8] invokespecial %this.<java.lang.Object: void <init>()>();",];
+}

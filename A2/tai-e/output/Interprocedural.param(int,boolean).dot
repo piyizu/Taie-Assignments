@@ -1,0 +1,16 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="Entry<Interprocedural: void param(int,boolean)>",];
+  "1" [label="0: x = i",];
+  "2" [label="1: %intconst0 = 10",];
+  "3" [label="2: y = i + %intconst0",];
+  "4" [label="3: p = b",];
+  "5" [label="4: return",];
+  "6" [label="Exit<Interprocedural: void param(int,boolean)>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="FALL_THROUGH",];
+  "4" -> "5" [label="FALL_THROUGH",];
+  "5" -> "6" [label="RETURN",];
+}

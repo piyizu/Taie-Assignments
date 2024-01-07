@@ -1,0 +1,11 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="<java.lang.Object: void <init>()>",];
+  "1" [label="<Assign: void main(java.lang.String[])>",];
+  "2" [label="<A: void <init>()>",];
+  "3" [label="<B: void <init>()>",];
+  "1" -> "2" [label="[1@L4] invokespecial temp$0.<A: void <init>()>();",];
+  "1" -> "3" [label="[6@L7] invokespecial temp$1.<B: void <init>()>();",];
+  "2" -> "0" [label="[0@L12] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "3" -> "2" [label="[0@L15] invokespecial %this.<A: void <init>()>();",];
+}

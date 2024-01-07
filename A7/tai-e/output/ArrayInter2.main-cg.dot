@@ -1,0 +1,8 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="<ArrayInter2: void set(int[],int,int)>",];
+  "1" [label="<ArrayInter2: void main(java.lang.String[])>",];
+  "2" [label="<ArrayInter2: int get(int[],int)>",];
+  "1" -> "2" [label="[5@L6] temp$0 = invokestatic <ArrayInter2: int get(int[],int)>(a, %intconst1);",];
+  "1" -> "0" [label="[4@L5] invokestatic <ArrayInter2: void set(int[],int,int)>(a, %intconst1, %intconst2);",];
+}

@@ -1,0 +1,36 @@
+public final class AnonInner$1Anonymous0 extends java.lang.Object implements Adder
+{
+    public final int val$i;
+
+    public final int add(int)
+    {
+        AnonInner$1Anonymous0 this;
+        int j, temp$0, temp$1;
+
+        this := @this: AnonInner$1Anonymous0;
+
+        j := @parameter0: int;
+
+        temp$0 = this.<AnonInner$1Anonymous0: int val$i>;
+
+        temp$1 = temp$0 + j;
+
+        return temp$1;
+    }
+
+    public void <init>(int)
+    {
+        int val$i;
+        AnonInner$1Anonymous0 this;
+
+        this := @this: AnonInner$1Anonymous0;
+
+        val$i := @parameter0: int;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        this.<AnonInner$1Anonymous0: int val$i> = val$i;
+
+        return;
+    }
+}

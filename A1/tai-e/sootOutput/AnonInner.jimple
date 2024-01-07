@@ -1,0 +1,45 @@
+class AnonInner extends java.lang.Object
+{
+
+    static Adder makeAdder(int)
+    {
+        int i;
+        AnonInner$1Anonymous0 temp$0;
+
+        i := @parameter0: int;
+
+        temp$0 = new AnonInner$1Anonymous0;
+
+        specialinvoke temp$0.<AnonInner$1Anonymous0: void <init>(int)>(i);
+
+        return temp$0;
+    }
+
+    static void show()
+    {
+        java.io.PrintStream temp$0;
+        int temp$2;
+        Adder temp$1;
+
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+
+        temp$1 = staticinvoke <AnonInner: Adder makeAdder(int)>(2);
+
+        temp$2 = interfaceinvoke temp$1.<Adder: int add(int)>(5);
+
+        virtualinvoke temp$0.<java.io.PrintStream: void println(int)>(temp$2);
+
+        return;
+    }
+
+    void <init>()
+    {
+        AnonInner this;
+
+        this := @this: AnonInner;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

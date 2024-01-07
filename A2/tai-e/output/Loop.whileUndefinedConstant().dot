@@ -1,0 +1,35 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="Entry<Loop: void whileUndefinedConstant()>",];
+  "1" [label="0: i = 0",];
+  "2" [label="1: nop",];
+  "3" [label="2: %intconst0 = 10",];
+  "4" [label="3: if (i < %intconst0) goto 5",];
+  "5" [label="4: goto 12",];
+  "6" [label="5: nop",];
+  "7" [label="6: a = b",];
+  "8" [label="7: b = c",];
+  "9" [label="8: c = 1",];
+  "10" [label="9: %intconst1 = 1",];
+  "11" [label="10: i = i + %intconst1",];
+  "12" [label="11: goto 1",];
+  "13" [label="12: nop",];
+  "14" [label="13: return",];
+  "15" [label="Exit<Loop: void whileUndefinedConstant()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="FALL_THROUGH",];
+  "4" -> "6" [label="IF_TRUE",];
+  "4" -> "5" [label="IF_FALSE",];
+  "5" -> "13" [label="GOTO",];
+  "6" -> "7" [label="FALL_THROUGH",];
+  "7" -> "8" [label="FALL_THROUGH",];
+  "8" -> "9" [label="FALL_THROUGH",];
+  "9" -> "10" [label="FALL_THROUGH",];
+  "10" -> "11" [label="FALL_THROUGH",];
+  "11" -> "12" [label="FALL_THROUGH",];
+  "12" -> "2" [label="GOTO",];
+  "13" -> "14" [label="FALL_THROUGH",];
+  "14" -> "15" [label="RETURN",];
+}

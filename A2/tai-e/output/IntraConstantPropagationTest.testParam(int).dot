@@ -1,0 +1,12 @@
+digraph G {
+  node [shape=box,color=".3 .2 1.0",style=filled,];
+  "0" [label="Entry<IntraConstantPropagationTest: void testParam(int)>",];
+  "1" [label="0: a = x",];
+  "2" [label="1: b = a",];
+  "3" [label="2: return",];
+  "4" [label="Exit<IntraConstantPropagationTest: void testParam(int)>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="RETURN",];
+}

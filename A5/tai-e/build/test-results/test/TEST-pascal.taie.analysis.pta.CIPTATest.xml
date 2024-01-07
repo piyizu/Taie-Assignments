@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pascal.taie.analysis.pta.CIPTATest" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-11-23T09:20:25" hostname="THINKPAD-PIYI" time="31.836">
+  <properties/>
+  <testcase name="testStoreLoad" classname="pascal.taie.analysis.pta.CIPTATest" time="10.084"/>
+  <testcase name="testMergeParam" classname="pascal.taie.analysis.pta.CIPTATest" time="3.371"/>
+  <testcase name="testExample" classname="pascal.taie.analysis.pta.CIPTATest" time="2.583"/>
+  <testcase name="testArray" classname="pascal.taie.analysis.pta.CIPTATest" time="2.063"/>
+  <testcase name="testCall" classname="pascal.taie.analysis.pta.CIPTATest" time="2.729"/>
+  <testcase name="testAssign2" classname="pascal.taie.analysis.pta.CIPTATest" time="2.261"/>
+  <testcase name="testStaticCall" classname="pascal.taie.analysis.pta.CIPTATest" time="2.15"/>
+  <testcase name="testStaticField" classname="pascal.taie.analysis.pta.CIPTATest" time="2.602"/>
+  <testcase name="testInstanceField" classname="pascal.taie.analysis.pta.CIPTATest" time="1.881"/>
+  <testcase name="testAssign" classname="pascal.taie.analysis.pta.CIPTATest" time="2.111"/>
+  <system-out><![CDATA[Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9842 classes with 97791 methods in the world
+WorldBuilder finishes, elapsed time: 8.25s
+class-dumper starts ...
+Dumping 3 classes to output ...
+class-dumper finishes, elapsed time: 0.22s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                9
+#var points-to:               10
+#static field points-to:      0
+#instance field points-to:    1
+#array indexes points-to:     0
+#reachable methods:           4
+#call graph edges:            4
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\StoreLoad-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.60s
+Tai-e finishes, elapsed time: 9.35s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9841 classes with 97791 methods in the world
+WorldBuilder finishes, elapsed time: 3.29s
+class-dumper starts ...
+Dumping 2 classes to output ...
+class-dumper finishes, elapsed time: 0.02s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                10
+#var points-to:               16
+#static field points-to:      0
+#instance field points-to:    0
+#array indexes points-to:     0
+#reachable methods:           4
+#call graph edges:            5
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\MergeParam-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 3.37s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9842 classes with 97793 methods in the world
+WorldBuilder finishes, elapsed time: 2.52s
+class-dumper starts ...
+Dumping 3 classes to output ...
+class-dumper finishes, elapsed time: 0.00s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                13
+#var points-to:               17
+#static field points-to:      0
+#instance field points-to:    0
+#array indexes points-to:     0
+#reachable methods:           5
+#call graph edges:            6
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\Example-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.01s
+Tai-e finishes, elapsed time: 2.58s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9842 classes with 97792 methods in the world
+WorldBuilder finishes, elapsed time: 1.98s
+class-dumper starts ...
+Dumping 3 classes to output ...
+class-dumper finishes, elapsed time: 0.02s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                12
+#var points-to:               17
+#static field points-to:      0
+#instance field points-to:    0
+#array indexes points-to:     3
+#reachable methods:           5
+#call graph edges:            6
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\Array-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.03s
+Tai-e finishes, elapsed time: 2.06s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9843 classes with 97793 methods in the world
+WorldBuilder finishes, elapsed time: 2.67s
+class-dumper starts ...
+Dumping 4 classes to output ...
+class-dumper finishes, elapsed time: 0.02s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                15
+#var points-to:               17
+#static field points-to:      0
+#instance field points-to:    0
+#array indexes points-to:     0
+#reachable methods:           6
+#call graph edges:            7
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\Call-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.01s
+Tai-e finishes, elapsed time: 2.73s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9841 classes with 97791 methods in the world
+WorldBuilder finishes, elapsed time: 2.16s
+class-dumper starts ...
+Dumping 2 classes to output ...
+class-dumper finishes, elapsed time: 0.00s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                10
+#var points-to:               22
+#static field points-to:      0
+#instance field points-to:    0
+#array indexes points-to:     0
+#reachable methods:           4
+#call graph edges:            6
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\Assign2-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 2.26s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9840 classes with 97791 methods in the world
+WorldBuilder finishes, elapsed time: 2.09s
+class-dumper starts ...
+Dumping 1 classes to output ...
+class-dumper finishes, elapsed time: 0.01s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                12
+#var points-to:               8
+#static field points-to:      0
+#instance field points-to:    0
+#array indexes points-to:     0
+#reachable methods:           4
+#call graph edges:            4
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\StaticCall-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 2.15s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9842 classes with 97791 methods in the world
+WorldBuilder finishes, elapsed time: 2.56s
+class-dumper starts ...
+Dumping 3 classes to output ...
+class-dumper finishes, elapsed time: 0.00s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                4
+#var points-to:               4
+#static field points-to:      1
+#instance field points-to:    0
+#array indexes points-to:     0
+#reachable methods:           3
+#call graph edges:            2
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\StaticField-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 2.60s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9844 classes with 97797 methods in the world
+WorldBuilder finishes, elapsed time: 1.82s
+class-dumper starts ...
+Dumping 5 classes to output ...
+class-dumper finishes, elapsed time: 0.01s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                38
+#var points-to:               53
+#static field points-to:      0
+#instance field points-to:    6
+#array indexes points-to:     0
+#reachable methods:           10
+#call graph edges:            18
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\InstanceField-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 1.88s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+9842 classes with 97791 methods in the world
+WorldBuilder finishes, elapsed time: 2.06s
+class-dumper starts ...
+Dumping 3 classes to output ...
+class-dumper finishes, elapsed time: 0.00s
+cipta starts ...
+-------------- Pointer analysis statistics: --------------
+#var pointers:                9
+#var points-to:               14
+#static field points-to:      0
+#instance field points-to:    0
+#array indexes points-to:     0
+#reachable methods:           4
+#call graph edges:            4
+----------------------------------------
+Comparing points-to set with src\test\resources\pta\cipta\Assign-cipta-expected.txt ...
+cipta finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 2.11s
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

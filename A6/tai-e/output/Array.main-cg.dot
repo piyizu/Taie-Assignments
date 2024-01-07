@@ -1,0 +1,14 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="<java.lang.Object: int hashCode()>",];
+  "1" [label="<Array: void main(java.lang.String[])>",];
+  "2" [label="<A: void <init>()>",];
+  "3" [label="<java.lang.Object: void <init>()>",];
+  "4" [label="<Array: void arrayStore(java.lang.Object[],java.lang.Object)>",];
+  "1" -> "2" [label="[15@L10] invokespecial temp$9.<A: void <init>()>();",];
+  "1" -> "2" [label="[3@L5] invokespecial temp$2.<A: void <init>()>();",];
+  "1" -> "4" [label="[16@L10] invokestatic <Array: void arrayStore(java.lang.Object[],java.lang.Object)>(barr, temp$9);",];
+  "1" -> "0" [label="[12@L8] invokevirtual arr.<java.lang.Object: int hashCode()>();",];
+  "1" -> "2" [label="[7@L6] invokespecial temp$5.<A: void <init>()>();",];
+  "2" -> "3" [label="[0@L19] invokespecial %this.<java.lang.Object: void <init>()>();",];
+}

@@ -1,0 +1,57 @@
+public class AAARecursiveInvoke extends java.lang.Object
+{
+
+    static void main(java.lang.String[])
+    {
+        int a, temp$0;
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = staticinvoke <AAARecursiveInvoke: int fun(int)>(1);
+
+        a = temp$0;
+
+        return;
+
+        return;
+    }
+
+    static int fun(int)
+    {
+        int x, temp$0, temp$1, temp$2;
+
+        x := @parameter0: int;
+
+        if x > 0 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+
+        temp$0 = staticinvoke <AAARecursiveInvoke: int fun(int)>(x);
+
+        temp$1 = x * temp$0;
+
+        return temp$1;
+
+     label2:
+        nop;
+
+        temp$2 = 1;
+
+        return temp$2;
+    }
+
+    public void <init>()
+    {
+        AAARecursiveInvoke this;
+
+        this := @this: AAARecursiveInvoke;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

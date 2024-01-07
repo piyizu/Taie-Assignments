@@ -1,0 +1,39 @@
+public class ArrayTest extends java.lang.Object
+{
+
+    void arrayCreating(int)
+    {
+        ArrayTest this;
+        int[] ar;
+        int c, x, y, temp$0, z, temp$1;
+
+        this := @this: ArrayTest;
+
+        c := @parameter0: int;
+
+        ar = newarray (int)[15];
+
+        x = lengthof ar;
+
+        temp$0 = x;
+
+        y = temp$0 + 1;
+
+        temp$1 = x;
+
+        z = temp$1 + c;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        ArrayTest this;
+
+        this := @this: ArrayTest;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

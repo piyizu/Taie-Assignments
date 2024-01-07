@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pascal.taie.analysis.dataflow.analysis.constprop.CPTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-12-15T11:19:24" hostname="TPT14G3I524GPY" time="34.98">
+  <properties/>
+  <testcase name="testSimpleChar" classname="pascal.taie.analysis.dataflow.analysis.constprop.CPTest" time="18.816"/>
+  <testcase name="testSimpleBinary" classname="pascal.taie.analysis.dataflow.analysis.constprop.CPTest" time="4.169"/>
+  <testcase name="testSimpleBranch" classname="pascal.taie.analysis.dataflow.analysis.constprop.CPTest" time="3.407"/>
+  <testcase name="testSimpleConstant" classname="pascal.taie.analysis.dataflow.analysis.constprop.CPTest" time="2.117"/>
+  <testcase name="testBranchConstant" classname="pascal.taie.analysis.dataflow.analysis.constprop.CPTest" time="2.266"/>
+  <testcase name="testAssign" classname="pascal.taie.analysis.dataflow.analysis.constprop.CPTest" time="2.169"/>
+  <testcase name="testInterprocedural" classname="pascal.taie.analysis.dataflow.analysis.constprop.CPTest" time="2.036"/>
+  <system-out><![CDATA[Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'SimpleChar' does not have main(String[]) method!
+9776 classes with 97286 methods in the world
+WorldBuilder finishes, elapsed time: 16.27s
+throw starts ...
+1 classes in scope (app) of class analyses
+4 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.35s
+cfg starts ...
+cfg finishes, elapsed time: 0.14s
+constprop starts ...
+constprop finishes, elapsed time: 0.26s
+process-result starts ...
+process-result finishes, elapsed time: 0.15s
+Tai-e finishes, elapsed time: 17.64s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'SimpleBinary' does not have main(String[]) method!
+9776 classes with 97288 methods in the world
+WorldBuilder finishes, elapsed time: 3.98s
+throw starts ...
+1 classes in scope (app) of class analyses
+6 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.08s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.03s
+Tai-e finishes, elapsed time: 4.17s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'SimpleBranch' does not have main(String[]) method!
+9776 classes with 97284 methods in the world
+WorldBuilder finishes, elapsed time: 3.31s
+throw starts ...
+1 classes in scope (app) of class analyses
+2 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.01s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 3.41s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'SimpleConstant' does not have main(String[]) method!
+9776 classes with 97285 methods in the world
+WorldBuilder finishes, elapsed time: 2.07s
+throw starts ...
+1 classes in scope (app) of class analyses
+3 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.01s
+Tai-e finishes, elapsed time: 2.12s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'BranchConstant' does not have main(String[]) method!
+9776 classes with 97285 methods in the world
+WorldBuilder finishes, elapsed time: 2.22s
+throw starts ...
+1 classes in scope (app) of class analyses
+3 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 2.26s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'Assign' does not have main(String[]) method!
+9776 classes with 97284 methods in the world
+WorldBuilder finishes, elapsed time: 2.10s
+throw starts ...
+1 classes in scope (app) of class analyses
+2 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.02s
+Tai-e finishes, elapsed time: 2.17s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'Interprocedural' does not have main(String[]) method!
+9776 classes with 97287 methods in the world
+WorldBuilder finishes, elapsed time: 2.00s
+throw starts ...
+1 classes in scope (app) of class analyses
+5 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.01s
+Tai-e finishes, elapsed time: 2.04s
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

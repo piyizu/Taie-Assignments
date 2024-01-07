@@ -1,0 +1,47 @@
+public class test extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        int x, y, z, temp$0;
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        x = 6;
+
+        y = 7;
+
+        temp$0 = staticinvoke <test: int fuck(int,int)>(x, y);
+
+        z = temp$0;
+
+        return;
+    }
+
+    public static int fuck(int, int)
+    {
+        int x, y, temp$0, temp$1;
+
+        x := @parameter0: int;
+
+        y := @parameter1: int;
+
+        temp$0 = x;
+
+        temp$1 = temp$0 + y;
+
+        return temp$1;
+    }
+
+    public void <init>()
+    {
+        test this;
+
+        this := @this: test;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

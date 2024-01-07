@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class pascal.taie.analysis.dataflow.analysis.DeadCodeTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class pascal.taie.analysis.dataflow.analysis.DeadCodeTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/pascal.taie.analysis.dataflow.analysis.html">pascal.taie.analysis.dataflow.analysis</a> &gt; DeadCodeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">21.212s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testControlFlowUnreachable</td>
+<td class="success">2.220s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeadAssignment</td>
+<td class="success">3.798s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLoops</td>
+<td class="success">9.713s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnreachableIfBranch</td>
+<td class="success">2.898s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUnreachableSwitchBranch</td>
+<td class="success">2.583s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'Loops' does not have main(String[]) method!
+9840 classes with 97791 methods in the world
+WorldBuilder finishes, elapsed time: 8.31s
+throw starts ...
+1 classes in scope (app) of class analyses
+4 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.18s
+cfg starts ...
+cfg finishes, elapsed time: 0.05s
+constprop starts ...
+constprop finishes, elapsed time: 0.07s
+livevar starts ...
+livevar finishes, elapsed time: 0.02s
+deadcode starts ...
+deadcode finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.06s
+Tai-e finishes, elapsed time: 8.99s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'DeadAssignment' does not have main(String[]) method!
+9840 classes with 97790 methods in the world
+WorldBuilder finishes, elapsed time: 3.73s
+throw starts ...
+1 classes in scope (app) of class analyses
+3 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.02s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+livevar starts ...
+livevar finishes, elapsed time: 0.00s
+deadcode starts ...
+deadcode finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 3.78s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'ControlFlowUnreachable' does not have main(String[]) method!
+9840 classes with 97790 methods in the world
+WorldBuilder finishes, elapsed time: 2.16s
+throw starts ...
+1 classes in scope (app) of class analyses
+3 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.02s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+livevar starts ...
+livevar finishes, elapsed time: 0.00s
+deadcode starts ...
+deadcode finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 2.23s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'UnreachableSwitchBranch' does not have main(String[]) method!
+9840 classes with 97790 methods in the world
+WorldBuilder finishes, elapsed time: 2.55s
+throw starts ...
+1 classes in scope (app) of class analyses
+3 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+livevar starts ...
+livevar finishes, elapsed time: 0.00s
+deadcode starts ...
+deadcode finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 2.58s
+Tai-e starts ...
+Writing options to output\options.yml
+Writing analysis plan to output\tai-e-plan.yml
+WorldBuilder starts ...
+Warning: main class 'UnreachableIfBranch' does not have main(String[]) method!
+9840 classes with 97789 methods in the world
+WorldBuilder finishes, elapsed time: 2.86s
+throw starts ...
+1 classes in scope (app) of class analyses
+2 methods in scope (app) of method analyses
+throw finishes, elapsed time: 0.00s
+cfg starts ...
+cfg finishes, elapsed time: 0.00s
+constprop starts ...
+constprop finishes, elapsed time: 0.00s
+livevar starts ...
+livevar finishes, elapsed time: 0.00s
+deadcode starts ...
+deadcode finishes, elapsed time: 0.00s
+process-result starts ...
+process-result finishes, elapsed time: 0.00s
+Tai-e finishes, elapsed time: 2.90s
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 2023年11月4日 下午9:55:35</p>
+</div>
+</div>
+</body>
+</html>

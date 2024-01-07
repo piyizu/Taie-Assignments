@@ -1,0 +1,19 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="<Interprocedural2$Y: int getG()>",];
+  "1" [label="<Interprocedural2$Y: void setG(int)>",];
+  "2" [label="<java.lang.Object: void <init>()>",];
+  "3" [label="<Interprocedural2: void main(java.lang.String[])>",];
+  "4" [label="<Interprocedural2$Y: void <init>()>",];
+  "5" [label="<Interprocedural2$X: void setF(int)>",];
+  "6" [label="<Interprocedural2$X: int getF()>",];
+  "7" [label="<Interprocedural2$X: void <init>()>",];
+  "3" -> "4" [label="[8@L6] invokespecial temp$2.<Interprocedural2$Y: void <init>()>();",];
+  "3" -> "0" [label="[12@L8] temp$3 = invokevirtual y.<Interprocedural2$Y: int getG()>();",];
+  "3" -> "7" [label="[1@L3] invokespecial temp$0.<Interprocedural2$X: void <init>()>();",];
+  "3" -> "6" [label="[5@L5] temp$1 = invokevirtual x.<Interprocedural2$X: int getF()>();",];
+  "3" -> "1" [label="[11@L7] invokevirtual y.<Interprocedural2$Y: void setG(int)>(%intconst1);",];
+  "3" -> "5" [label="[4@L4] invokevirtual x.<Interprocedural2$X: void setF(int)>(%intconst0);",];
+  "4" -> "2" [label="[0@L23] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "7" -> "2" [label="[0@L11] invokespecial %this.<java.lang.Object: void <init>()>();",];
+}
